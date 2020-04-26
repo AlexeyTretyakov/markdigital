@@ -5,4 +5,12 @@
  * They allow you to set text and images, but also override components, routes and more.
  *
  */
-export default {}
+export default {
+    home:{
+        intro:{
+            pretitle:"Mark Digital",
+            title: "Реклама в соц.сетях",
+            сontent:"Мы делаем контент и продвижение"
+        }
+    }
+}
