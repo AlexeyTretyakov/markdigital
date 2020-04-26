@@ -27,8 +27,10 @@
       "tretyaknn@list.ru"
     ],
     "load": [
-      "app",
-      "server"
+      {
+      "app": "index",
+      "server": "server"
+    }
     ]
   }
 }
