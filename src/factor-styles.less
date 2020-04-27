@@ -4,5 +4,18 @@
   Use .factor-app class. Make sure to reference any available CSS variables in extensions
 */
 html.factor-app {
-  --my-custom-variable: #0496ff;
+  --my-custom-variable: rgb(4, 150, 255);
+  .site-head, .intro {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,13,71,1) 35%, rgba(4,150,255) 100%);
+  }
+  .site-head-pad .nav, .site-head-pad .social>a {
+   color: #ffffff;
+  }
+  .site-head-pad .nav>a.active, .site-head-pad .nav>a.active-path, .site-head-pad .nav>a:hover, .site-head-pad .social>a.active, .site-head-pad .social>a.active-path, .site-head-pad .social>a:hover {
+    color: #ffffff;
+  }
+  .factor-img svg {
+    display:none;
+  }
 }

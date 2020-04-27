@@ -6,15 +6,107 @@
  *
  */
 export default {
+
     metatags: {
         defaultTitle: "Mark Digital",
-        titleTemplate: "Mark Digital-Digital Agency",
+        titleTemplate: "Mark Digital",
       },
+      site: {
+        
+        logo: (): Promise<any> => import("./mylogo.vue"),
+        
+        nav: [
+          {
+            _item: "intro",
+            path: "/",
+            name: "Интро",
+          },
+          {
+            _item: "about",
+            path: "/about",
+            name: "О нас",
+          },
+          {
+            _item: "work",
+            path: "/work",
+            name: "Кейсы",
+          },
+          {
+            _item: "blog",
+            path: "/blog",
+            name: "Блог",
+          },
+          {
+            _item: "contact",
+            path: "/contact",
+            name: "Контакты",
+          },
+        ],
+        cta: {
+            headline: "Давайте обсудим ваш проект",
+            path: "/contact",
+            text: "Напишите нам",
+          },
+},
+
     home:{
         intro:{
-            pretitle:"Mark Digital",
-            title: "Реклама в соц.сетях",
-            сontent:"Мы делаем контент и продвижение",
-        }
+      pretitle: "Mark Digital",
+      title: "Реклама в соц.сетях",
+      content:"Контент, продвижение, работа с блогерами",
+      buttons: [
+        {
+          _item: "contact",
+          link: "/contact",
+          text: `Начать проект  <i class="fas fa-arrow-right"></i>`,
+          classes:
+            "btn rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:text-white",
+        },
+        {
+          _item: "work",
+          link: "/work",
+          text: "Кейсы",
+          classes:
+            "btn rounded-full border border-solid border-white text-white hover:bg-white hover:text-blue-500",
+        },
+      ],
+    },
+
+    section2: {
+      pretitle: "Услуги",
+      title: "Что мы делаем",
+    },
+    section3: {
+      pretitle: "Кейсы",
+      title: "Последние проекты",
+      buttons: [
+          {
+        _item: "work",
+        link: "/work",
+        text: "Посмотреть все кейсы",
+        classes:"btn rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:text-white",
+          },
+      ],
+      limit: 4, // Post limit
+    },
+    section4: {
+        pretitle: "Отзывы",
+        title: "Истории успеха",
+    },
+    },
+    footer: {
+        legal: `&copy; 2020 <a href="https://www.mark-digital.ru/" target="_blank">Mark-digital.ru</a>`,
+        nav: [
+          {
+            _item: "terms",
+            path: "https://www.fiction.com/terms-of-service",
+            text: "Реквизиты",
+          },
+          {
+            _item: "privacy",
+            path: "https://www.fiction.com/privacy-policy",
+            text: "Пользовательское соглашение",
+          },
+        ],
+      },
     }
-}
