@@ -122,5 +122,27 @@ export default {
               image: require("./logo.png"),
             },
           },
+          templateSettings: [
+            {
+              _id: "bullets",
+              input: "sortable",
+              label: "Additional Work Info",
+              description: "Additional information about this project",
+              _default: [
+                { __title: "Client", value: "Client Name" },
+                { __title: "Role", value: "Role" },
+                { __title: "Year", value: new Date().getFullYear() },
+                { __title: "Platforms", value: "Web" },
+                { __title: "URL", value: "https://www.example.com" },
+              ],
+              settings: [
+                {
+                  input: "text",
+                  label: "Value",
+                  _id: "value",
+                },
+              ],
+            },
+          ],  
     },
     }
