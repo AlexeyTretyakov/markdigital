@@ -114,5 +114,13 @@ export default {
         pretitle: "Кейсы",
         title: "Наши работы",
         content: "Проекты с которыми мы работали или работаем в данное время",
-      },
+        metatags: {
+            index: {
+              title: "Mark Digital",
+              description:
+                "Наши кейсы",
+              image: require("./logo.png"),
+            },
+          },
+    },
     }
