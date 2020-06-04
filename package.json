@@ -5,7 +5,7 @@
   "main": "src/index",
   "private": true,
   "scripts": {
-  "heroku-postbuild": "yarn factor build"
+    "heroku-postbuild": "yarn factor build"
   },
   "dependencies": {
     "@factor/core": "^1.0.0",
@@ -28,9 +28,9 @@
     ],
     "load": [
       {
-      "app": "index",
-      "server": "server"
-    }
+        "app": "index",
+        "server": "server"
+      }
     ]
   }
 }
