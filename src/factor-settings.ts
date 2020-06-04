@@ -60,7 +60,7 @@ export default {
       {
         _item: "contact",
         link: "/contact",
-        text: `Написать<i class="fas fa-arrow-right"></i>`,
+        text: `Написать <i class="fas fa-arrow-right"></i>`,
         classes:
           "btn rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:text-white",
       },
