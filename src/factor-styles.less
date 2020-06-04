@@ -4,12 +4,24 @@
   Use .factor-app class. Make sure to reference any available CSS variables in extensions
 */
 html.factor-app {
+  --font-weight-bold: 500;
   --my-custom-variable: rgb(4, 150, 255);
   --color-primary: #ff044a;
-  .site-head, .intro {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,13,71,1) 35%, rgba(4,150,255) 100%);
+.intro {    	
+   background-image: url(./img/bgr.svg);
+   background-repeat: no-repeat;
+   background-position-x: 90%;
+   background-position-y: bottom;
+   background-size: 25%;
+   @media (max-width: 768px) { 
+    background-image:none;
+   }
   }
+  
+  .intro-inner{
+    max-width:1000px;
+  }
+
   .site-head-pad .nav, .site-head-pad .social>a {
    color: #ffffff;
   }
@@ -19,4 +31,14 @@ html.factor-app {
   .factor-img svg {
     display:none;
   }
+
+  .item-icon > img {
+    width:82px;
+  }
+
+ .section2 .section2-inner .item .item-icon {
+  @media (max-width: 900px){
+  justify-content: center;
+  }
+ }
 }
