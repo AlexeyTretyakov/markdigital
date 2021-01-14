@@ -5,7 +5,7 @@
   "main": "src/index",
   "private": true,
   "scripts": {
-    "heroku-postbuild": "npx factor build"
+    "heroku-postbuild": "yarn factor build"
   },
  
   "dependencies": {
