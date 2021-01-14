@@ -5,16 +5,16 @@
   "main": "src/index",
   "private": true,
   "scripts": {
-    "heroku-postbuild": "yarn factor build"
+    "heroku-postbuild": "npx factor build"
   },
   "dependencies": {
-    "@factor/core": "^1.0.0",
-    "@factor/plugin-notify": "^1.0.0",
-    "@factor/plugin-seo": "^1.0.0",
-    "@factor/plugin-sitemap": "^1.0.0",
-    "@factor/plugin-contact-form": "^1.0.0",
-    "@factor/plugin-storage-s3": "^1.0.0",
-    "@factor/theme-alpha": "^1.6.3"
+    "@factor/core": "^1.8.26",
+    "@factor/plugin-notify": "^1.7.8",
+    "@factor/plugin-seo": "^1.8.3",
+    "@factor/plugin-sitemap": "^1.8.11",
+    "@factor/plugin-contact-form": "^1.8.11",
+    "@factor/plugin-storage-s3": "^1.8.3",
+    "@factor/theme-alpha": "^1.8.26"
   },
   "factor": {
     "app": {
